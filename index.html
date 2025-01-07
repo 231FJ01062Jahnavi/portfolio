@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Bootstrap CSS link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        /* General Body Styles */
+        body {
+            font-family: "Times New Roman", Times, serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f3f1e5;
+            color: #3d3d3d;
+        }
+
+        /* Header */
+        header {
+            background-color: #d9883d;
+            color: #fff;
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            font-weight: lighter;
+        }
+
+        /* Profile Section */
+        .profile {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: -50px;
+            padding: 30px 0;
+            background-color: #fff;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .profile img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-right: 30px;
+            object-fit: cover;
+        }
+
+        .profile h2 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            color: #d67ba1;
+        }
+
+        .profile p {
+            font-size: 1.1rem;
+        }
+
+        /* Section Title */
+        .section-title {
+            font-size: 2.2rem;
+            margin: 40px 0 20px;
+            text-align: center;
+            color: #2c2c2c;
+        }
+
+        /* Qualifications and Skills Section */
+        .qualifications,
+        .skills {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            padding: 0 20px;
+            flex-wrap: wrap;
+        }
+
+        .qualification-card,
+        .skills-card {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 300px;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .qualification-card h3,
+        .skills-card h3 {
+            color: #d67ba1;
+            font-size: 1.6rem;
+            margin-bottom: 10px;
+        }
+
+        .qualification-card p,
+        .skills-card p {
+            font-size: 1.2rem;
+            color: #555;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #d9883d;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .profile {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .qualifications,
+            .skills {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+
+        /* Contact Form */
+        .contact-form {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            max-width: 600px;
+            margin: 0 auto 50px;
+        }
+
+        .contact-form h3 {
+            margin-bottom: 20px;
+            color: #d67ba1;
+            text-align: center;
+        }
+
+        .contact-form button {
+            background-color: #d9883d;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .contact-form button:hover {
+            background-color: #c76e34;
+        }
+
+        #messageDisplay {
+            margin-top: 20px;
+        }
+
+        #messageDisplay h4 {
+            color: #d67ba1;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>My Portfolio</h1>
+        <p>A journey through my work, experiences, and growth.</p>
+    </header>
+
+    <!-- Profile Section -->
+    <section class="profile container">
+        <img src="image.jpg" alt="Clementine's Photo" class="img-fluid"> <!-- Replace with your image -->
+        <div>
+            <h2>Jahnavi Ch</h2>
+            <p>Welcome to my portfolio. I am a BCA 2nd-year student passionate about programming and creative writing.</p>
+        </div>
+    </section>
+
+    <!-- Qualification Section -->
+    <section class="container">
+        <h2 class="section-title">Educational Qualifications</h2>
+        <div class="row qualifications">
+            <div class="col-md-4 qualification-card">
+                <h3>BCA (Bachelor of Computer Applications)</h3>
+                <p>Achilles University</p>
+                <p>2023 - Present</p>
+            </div>
+            <div class="col-md-4 qualification-card">
+                <h3>12th Class (Science)</h3>
+                <p>Athene School</p>
+                <p>2020-2022</p>
+            </div>
+            <div class="col-md-4 qualification-card">
+                <h3>10th Class</h3>
+                <p>Persephone School</p>
+                <p>2008-2020</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="container">
+        <h2 class="section-title">Skills</h2>
+        <div class="row skills">
+            <div class="col-md-3 skills-card">
+                <h3>Writing & Activities</h3>
+                <p>Creating engaging content and participating in various writing activities.</p>
+            </div>
+            <div class="col-md-3 skills-card">
+                <h3>Freelance Copywriting</h3>
+                <p>Providing freelance copywriting services for blogs, websites, and social media.</p>
+            </div>
+            <div class="col-md-3 skills-card">
+                <h3>Java</h3>
+                <p>Developing programs and applications using Java for different purposes.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section id="contact" class="container">
+        <h2 class="section-title">Contact Me</h2>
+        <div class="contact-form">
+            <h3>Get in Touch</h3>
+            <form id="contactForm">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="name" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control" id="message" rows="4" required></textarea>
+                </div>
+                <div class="text-center">
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+            </form>
+            <div id="messageDisplay" class="d-none">
+                <h4>Submitted Details</h4>
+                <p><strong>Name:</strong> <span id="displayName"></span></p>
+                <p><strong>Email:</strong> <span id="displayEmail"></span></p>
+                <p><strong>Message:</strong> <span id="displayMessage"></span></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Clementine, BCA 2nd Year Student</p>
+    </footer>
+
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+
+    <!-- JavaScript for Form Handling -->
+    <script>
+        const contactForm = document.getElementById('contactForm');
+        const messageDisplay = document.getElementById('messageDisplay');
+        const displayName = document.getElementById('displayName');
+        const displayEmail = document.getElementById('displayEmail');
+        const displayMessage = document.getElementById('displayMessage');
+
+        contactForm.addEventListener('submit', function (event) {
+            event.preventDefault();
+
+            // Get form values
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+
+            // Display the submitted details
+            displayName.textContent = name;
+            displayEmail.textContent = email;
+            displayMessage.textContent = message;
+
+            // Show the contact details section
+            messageDisplay.classList.remove('d-none');
+
+            // Reset the form
+            contactForm.reset();
+        });
+    </script>
+
+</body>
+
+</html>
